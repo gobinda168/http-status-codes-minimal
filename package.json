@@ -33,7 +33,7 @@
     "node"
   ],
   "author": "Gobinda Das",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.20.2",
     "typescript": "^5.4.2"
