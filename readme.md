@@ -1,6 +1,6 @@
 # HTTP Status Codes Minimal
 
-Dive into the essence of HTTP communication with the **HTTP Status Codes Minimal** package, a sleek and ultra-lightweight npm package that's designed to supercharge your TypeScript projects. Weighing in at an incredibly lean **30KB**, this package is a testament to efficiency and optimization.
+Light weight package to managing HTTP status codes and reason phrases in TypeScript and Javascript applications.
 
 ## ✨ Features
 
@@ -9,35 +9,13 @@ Dive into the essence of HTTP communication with the **HTTP Status Codes Minimal
 - **Feather-Light Footprint:** At just 30KB, it's designed to be incredibly efficient, making it a no-brainer addition to your project.
 - **User-Friendly:** Simplified API with functions like `getReasonPhrase` and `getStatusCode` to effortlessly convert between status codes and reason phrases.
 
-## 🚀 Quick Start
-
-```typescript
-import { StatusCodes } from "http-status-codes-minimal";
-
-console.log(StatusCodes.ACCEPTED);
-```
-
-## 🔥 Why HTTP Status Codes Minimal?
-
-In the digital realm, efficiency is key. HTTP Status Codes Minimal embodies this principle by delivering a package that's not just minimal in size but also in complexity. It's the epitome of "just enough is more", providing exactly what you need to handle HTTP status codes in your TypeScript applications without any excess.
-
-Whether you're building a robust back-end system, a sleek web application, or anything in between, HTTP Status Codes Minimal integrates seamlessly, offering a straightforward and optimized solution to manage HTTP responses. Its minuscule footprint ensures that your project remains light and fast, reflecting your commitment to performance and quality.
-
 ## 📦 Installation
 
 ```bash
 npm install http-status-codes-minimal
 ```
 
-```bash
-pnpm install http-status-codes-minimal
-```
-
-```bash
-yarn add http-status-codes-minimal
-```
-
-## 📚 Usage
+## Usage
 
 ```bash
 import {
