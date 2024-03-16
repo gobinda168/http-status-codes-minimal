@@ -39,7 +39,8 @@ yarn add http-status-codes-minimal
 
 ## 📚 Usage
 
-```bashimport {
+```bash
+import {
   StatusCodes,
   ReasonPhrases,
   getReasonPhrase,
