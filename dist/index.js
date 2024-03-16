@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getStatusCode = exports.getReasonPhrase = exports.ReasonPhrases = exports.StatusCodes = void 0;
-// Enum for Status Codes
 var StatusCodes;
 (function (StatusCodes) {
     StatusCodes[StatusCodes["CONTINUE"] = 100] = "CONTINUE";
@@ -63,7 +62,6 @@ var StatusCodes;
     StatusCodes[StatusCodes["INSUFFICIENT_STORAGE"] = 507] = "INSUFFICIENT_STORAGE";
     StatusCodes[StatusCodes["NETWORK_AUTHENTICATION_REQUIRED"] = 511] = "NETWORK_AUTHENTICATION_REQUIRED";
 })(StatusCodes || (exports.StatusCodes = StatusCodes = {}));
-// Enum for Reason Phrases
 var ReasonPhrases;
 (function (ReasonPhrases) {
     ReasonPhrases["CONTINUE"] = "Continue";
@@ -125,12 +123,10 @@ var ReasonPhrases;
     ReasonPhrases["INSUFFICIENT_STORAGE"] = "Insufficient Storage";
     ReasonPhrases["NETWORK_AUTHENTICATION_REQUIRED"] = "Network Authentication Required";
 })(ReasonPhrases || (exports.ReasonPhrases = ReasonPhrases = {}));
-// Function to get reason phrase by status code
 function getReasonPhrase(statusCode) {
     return ReasonPhrases[StatusCodes[statusCode]];
 }
 exports.getReasonPhrase = getReasonPhrase;
-// Function to get status code by reason phrase
 function getStatusCode(reasonPhrase) {
     const entry = Object.entries(ReasonPhrases).find(([_, value]) => value.toLocaleLowerCase() === reasonPhrase.toLocaleLowerCase());
     if (entry) {

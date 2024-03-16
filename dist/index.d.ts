@@ -13,7 +13,7 @@ export declare enum StatusCodes {
     MULTI_STATUS = 207,
     MULTIPLE_CHOICES = 300,
     MOVED_PERMANENTLY = 301,
-    FOUND = 302,// Previously "Moved Temporarily"
+    FOUND = 302,
     SEE_OTHER = 303,
     NOT_MODIFIED = 304,
     USE_PROXY = 305,
@@ -32,7 +32,7 @@ export declare enum StatusCodes {
     GONE = 410,
     LENGTH_REQUIRED = 411,
     PRECONDITION_FAILED = 412,
-    PAYLOAD_TOO_LARGE = 413,// Previously "Request Entity Too Large"
+    PAYLOAD_TOO_LARGE = 413,
     URI_TOO_LONG = 414,
     UNSUPPORTED_MEDIA_TYPE = 415,
     RANGE_NOT_SATISFIABLE = 416,
