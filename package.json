@@ -6,6 +6,9 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "patchNpmVersion": "npm version patch",
+    "minorNpmVersion": "npm version minor",
+    "majorNpmVersion": "npm version major",
     "build:types": "tsc --emitDeclarationOnly --outDir dist",
     "build:js": "esbuild src/index.ts --bundle --minify --outfile=dist/index.js --platform=node --target=node14 --sourcemap --format=cjs && esbuild src/index.ts --bundle --minify --outfile=dist/index.mjs --platform=node --target=node14 --sourcemap --format=esm",
     "build": "npm run build:types && npm run build:js",
