@@ -10,13 +10,24 @@
     "minorNpmVersion": "npm version minor",
     "majorNpmVersion": "npm version major",
     "build:types": "tsc --emitDeclarationOnly --outDir dist",
-    "build:js": "esbuild src/index.ts --bundle --minify --outfile=dist/index.js --platform=node --target=node14 --sourcemap --format=cjs && esbuild src/index.ts --bundle --minify --outfile=dist/index.mjs --platform=node --target=node14 --sourcemap --format=esm",
+    "build:js": "esbuild src/index.ts --bundle --minify --outfile=dist/index.js --platform=node --target=node14 --format=cjs && esbuild src/index.ts --bundle --minify --outfile=dist/index.mjs --platform=node --target=node14 --format=esm",
     "build": "npm run build:types && npm run build:js",
     "prepare": "npm run build",
     "publish": "npm publish",
     "postpublish": "echo 'Package published successfully!'"
   },
-  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "http",
+    "status",
+    "codes",
+    "constants",
+    "javascript",
+    "typescript",
+    "node"
+  ],
   "author": "Gobinda Das",
   "license": "ISC",
   "devDependencies": {
