@@ -3,9 +3,11 @@
   "version": "1.1.9",
   "description": "Constants that represent various HTTP status codes, inspired by the Java Apache HttpStatus API.",
   "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "patchNpmVersion": "npm version patch",
+    "build": "esbuild src/index.ts --bundle --minify --outfile=dist/index.js --platform=node --target=node14 --sourcemap --format=cjs && esbuild src/index.ts --bundle --minify --outfile=dist/index.mjs --platform=node --target=node14 --sourcemap --format=esm",
     "prepare": "npm run build",
     "publish": "npm publish",
     "postpublish": "echo 'Package published successfully!'"
@@ -14,6 +16,7 @@
   "author": "Gobinda Das",
   "license": "ISC",
   "devDependencies": {
+    "esbuild": "^0.20.2",
     "typescript": "^5.4.2"
   }
 }
