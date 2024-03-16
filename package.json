@@ -1,6 +1,6 @@
 {
   "name": "http-status-codes-minimal",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "Constants that represent various HTTP status codes, inspired by the Java Apache HttpStatus API.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
