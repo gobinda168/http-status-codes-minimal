@@ -1,4 +1,3 @@
-// Enum for Status Codes
 export enum StatusCodes {
   CONTINUE = 100,
   SWITCHING_PROTOCOLS = 101,
@@ -14,7 +13,7 @@ export enum StatusCodes {
   MULTI_STATUS = 207,
   MULTIPLE_CHOICES = 300,
   MOVED_PERMANENTLY = 301,
-  FOUND = 302, // Previously "Moved Temporarily"
+  FOUND = 302, 
   SEE_OTHER = 303,
   NOT_MODIFIED = 304,
   USE_PROXY = 305,
@@ -33,7 +32,7 @@ export enum StatusCodes {
   GONE = 410,
   LENGTH_REQUIRED = 411,
   PRECONDITION_FAILED = 412,
-  PAYLOAD_TOO_LARGE = 413, // Previously "Request Entity Too Large"
+  PAYLOAD_TOO_LARGE = 413, 
   URI_TOO_LONG = 414,
   UNSUPPORTED_MEDIA_TYPE = 415,
   RANGE_NOT_SATISFIABLE = 416,
@@ -60,7 +59,6 @@ export enum StatusCodes {
   NETWORK_AUTHENTICATION_REQUIRED = 511,
 }
 
-// Enum for Reason Phrases
 export enum ReasonPhrases {
   CONTINUE = "Continue",
   SWITCHING_PROTOCOLS = "Switching Protocols",
@@ -122,12 +120,10 @@ export enum ReasonPhrases {
   NETWORK_AUTHENTICATION_REQUIRED = "Network Authentication Required",
 }
 
-// Function to get reason phrase by status code
 export function getReasonPhrase(statusCode: number): string | undefined {
   return ReasonPhrases[StatusCodes[statusCode] as keyof typeof ReasonPhrases];
 }
 
-// Function to get status code by reason phrase
 export function getStatusCode(reasonPhrase: string): number | undefined {
   const entry = Object.entries(ReasonPhrases).find(
     ([_, value]) =>
