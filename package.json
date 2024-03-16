@@ -5,6 +5,11 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gobinda168/http-status-codes-minimal.git"
+  },
+  "homepage": "https://www.thesagescript.com/",
   "scripts": {
     "patchNpmVersion": "npm version patch",
     "minorNpmVersion": "npm version minor",
@@ -19,10 +24,6 @@
   "files": [
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gobinda168/http-status-codes-minimal.git"
-  },
   "keywords": [
     "http",
     "status",
